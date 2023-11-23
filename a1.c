@@ -1,9 +1,18 @@
-#include"stdio.h"
+#include<stdio.h>
+#include<stdlib.h>
 
-int int main(int argc, char const *argv[])
+int main(int argc, char const *argv[])
 {
-	int a = 1;
-	printf("%d\n", 5&3 );
-	printf("%x",&a)
-	return 0;
+	FILE *pfile;
+    int  i;
+    char c;
+
+    pfile = fopen("a1.c", "r");
+	while ((c=fgetc(pfile)) != EOF)
+    {
+        printf("%c",c);
+    }
+    fclose(pfile);
+    return 0;
+
 }
