@@ -1,20 +1,11 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include"stdio.h"
 
 int main(int argc, char const *argv[])
 {
-	FILE *pfile;
-    int  i;
-    char c;
-    char *str = "abcdefghijklmnopqrstuvwxyz";
-    printf("len(str) = %d\n",strlen(str));
-    pfile = fopen("a1.c", "r");
-	while (!feof(pfile))
-    {
-        printf("%c",fgetc(pfile));
-    }
-    fclose(pfile);
-    return 0;
-
+	int a = 1;
+	scanf("input a num:",&a);
+	printf("十进制%d转化为十六进制%x",a,a);
+	return 0;
 }
+
+

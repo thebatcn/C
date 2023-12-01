@@ -2,7 +2,10 @@
 
 int main(int argc, char const *argv[])
 {
-	printf("%s\n","Hello" );
+	char *str;
+	printf("%s\n","Imput:Hello" );
+	scanf("%s",str);
+	printf("%s",str);
 	getchar();
 	return 0;
 }
