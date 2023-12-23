@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include<math.h>
+
 
 int main(int argc, char const *argv[])
 {
@@ -7,5 +9,9 @@ int main(int argc, char const *argv[])
 	scanf("%s",str);
 	printf("%s",str);
 	getchar();
+	getchar();
+	scanf();
+	abs();
 	return 0;
 }
+
