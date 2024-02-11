@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include<string.h>
+#include<stdint.h>
 
 // 函数声明
 int isPalindrome(int num);
@@ -21,6 +22,7 @@ int main() {
     return 0;
 }
 
+int
 // 函数定义：判断是否为回文数
 int isPalindrome(int num) {
     int originalNum = num;

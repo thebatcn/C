@@ -1,32 +1,61 @@
-#include<stdio.h>
-#include <string.h>
+#include <stdio.h>
 
-int gcd(int a,int b);
-int gcm(int a,int b);
-int yuefen(int fz,int fm);
+#define AVG(x,y) (x-y)/2    /* AVG(x,y) (((x)-(y))/2)*/
+#define AREA(x,y) (x)*(y)	/* AREA(x,y) ((x)*(y)) */
 
-int main(int argc, char const *argv[])
-{
-		int g = gcd(4,3);
-		printf("%d\n",g);
-		printf("%d\n",gcm(4,11));
-		yuefen(2,5);
+#define N 10
 
+void Pt(int b[],int n){
+	int *p;
+	// for(p=b;p<p+n;p++){
+	// 	printf("%d\n",*p);
+	// }
+	for (int *i = b; i < b+n; i++)
+	{
+		printf("%d\n",*i );
+		/* code */
+	}
 }
 
-int gcd(int a, int b){
-	return b? gcd(b, a%b):a;
-}
+int find_largest(int *a,int n){
+	int i,max;
 
-int gcm(int a, int b){
-	return a/gcd(a,b)*b;
-}
+	max = *a;
+	for(i = 0; i < n; a++)
+		if(*a > max)
+			max = *a;
+	return max;
 
-int yuefen(int fz,int fm){
-	int g_cd = gcd(fz,fm);
+}
+int main(void){
 	
-	fz /= g_cd;
-	fm /= g_cd;
-	printf("fz = %d fm = %d",fz,fm);
-}	
+	int b1[20]={1,2,3,4,5,6,7,8,9,10};	
+	Pt(b1,5);
 
+	printf("%d\n",find_largest(b1,10));
+	return 0;
+}
+
+bool search(int a[7][24],int n,int key){
+	int *p = a[0];
+
+	while(p < a[0]+ n)
+		if(*p == key)
+			return True;
+	return False;
+}
+
+double temperatures[7][24];
+
+double *day_temperatures[24];
+
+for(i = 0; i<7;i++){
+	printf("%lf",find_largest(temperatures[i],24);
+}
+
+
+for (int *p = a [i]; p < a[i]+k; p++)
+{
+	printf("%d ",*p);
+	/* code */
+}

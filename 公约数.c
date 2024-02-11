@@ -30,3 +30,8 @@ int yuefen(int fz,int fm){
 	printf("fz = %d fm = %d",fz,fm);
 }	
 
+
+x%5==1;
+
+
+
