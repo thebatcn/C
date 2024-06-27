@@ -38,3 +38,4 @@ int isPalindrome(int num) {
     // 判断是否与原始数字相等
     return (originalNum == reverseNum);
 }
+//
