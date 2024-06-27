@@ -65,3 +65,4 @@ bool play_game(void){
 //		}
 	}while((c = getchar())=='y'|| c =='Y');
 }
+//
